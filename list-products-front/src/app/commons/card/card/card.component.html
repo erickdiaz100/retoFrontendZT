@@ -1,0 +1,17 @@
+<div class="container-card">
+  <div class="card" style="width: 18rem">
+    <img
+      class="card-img-top"
+      src="{{ cardInfo.imageUrl }}"
+      alt="Card image cap"
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{ cardInfo.name }}</h5>
+      <p class="card-text">{{ cardInfo.description }}</p>
+      <p><strong>Precio:</strong> ${{ cardInfo.price }}</p>
+      <p><strong>Cantidad:</strong> {{ cardInfo.quantity }}</p>
+      <button type="button" class="btn btn-success">Comprar</button>
+    </div>
+  </div>
+</div>
+

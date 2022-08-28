@@ -1,0 +1,15 @@
+nav{
+  background-color: rgb(138, 145, 236);
+  font-weight: bolder
+}
+.navbar-brand{
+  margin:auto 2% ;
+}
+.collapse{
+   margin: auto 3%;
+}
+.nav-item{
+  margin:   auto 3%;
+}
+
+

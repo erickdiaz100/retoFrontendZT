@@ -1,0 +1,24 @@
+<div class="container-productcards">
+  <h2>
+    ¡En nuestro amplio catalogo de productos encontrará lo que tanto ha buscado!
+  </h2>
+  <div class="products">
+    <app-card
+    *ngFor="
+      let product of products | paginate: { itemsPerPage: 9, currentPage: p }
+    "
+    [cardInfo]="product"
+  ></app-card>
+  <pagination-controls
+    (pageChange)="p = $event"
+    [responsive]=true
+    previousLabel="Previous"
+    nextLabel="Next"
+    screenReaderPaginationLabel="Pagination"
+    screenReaderPageLabel="page"
+    screenReaderCurrentLabel="You're on page"
+  >
+  </pagination-controls>
+  </div>
+
+</div>
