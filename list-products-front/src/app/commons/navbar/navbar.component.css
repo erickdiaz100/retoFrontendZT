@@ -12,4 +12,9 @@ nav{
   margin:   auto 3%;
 }
 
-
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+.fill-remaining-space-tabs{
+  flex: 0.1 auto;
+}

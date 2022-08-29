@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/data.service';
+import { DataBaseProduct } from 'src/app/interfaces/DataBaseProduct';
 
 @Component({
   selector: 'app-home',
@@ -6,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
-
+  constructor(private dataService:DataService) {}
+products!:DataBaseProduct[];
   ngOnInit(): void {
-
+    this.dataService.sendGetRequest().subscribe((data) => {
+      this.products = data.slice(0,5);
+      console.log(this.products)
+    });
   }
 }
