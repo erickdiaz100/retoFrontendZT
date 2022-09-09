@@ -13,7 +13,6 @@ products!:DataBaseProduct[];
   ngOnInit(): void {
     this.dataService.sendGetRequest().subscribe((data) => {
       this.products = data.slice(0,5);
-      console.log(this.products)
     });
   }
 }

@@ -8,8 +8,11 @@ nav{
 .collapse{
    margin: auto 3%;
 }
+.navbar-toggler{
+margin: auto 3%;
+}
 .nav-item{
-  margin:   auto 3%;
+  margin: auto 2%;
 }
 
 .fill-remaining-space {
